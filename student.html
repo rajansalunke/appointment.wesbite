@@ -1,0 +1,42 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Student</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./resources\download.png" alt="WEBSITE LOGO">
+        <nav>
+            <ul class="nav_bar">
+                <li><u><a href="./index.html">HOME</a></u></li>
+                <li><u><a href="/student.html">STUDENT</a></u></li>
+                <li><u><a href="/teacher.html">TEACHER</a></u></li>
+                <li><u><a href="/admin.html" id="adminlink">ADMIN</a></u></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="student-body">
+        
+        <div class="sturight-body">
+            <div class="book-appo">
+                <h3 id="stu-form-head"> <u> BOOK AN APPOINTMENT </u></h3>
+                <form class="bookappo-form">
+                    <label for="NAME">NAME</label><input type="text" id="name">
+                    <label for="MOBILE NUMBER">MOBILE NUMBER</label><input type="text" id="MOBILE NUMBER">
+                    <label for="DATE">DATE</label><input type="date" id="DATE">
+                    <label for="TIME">TIME</label><input type="time" id="TIME">
+                    <input type="submit" value="BOOK" id="submitBtn">
+                </form>
+            </div>
+            <div class="message">
+                <h3 id="stu-form-head"><u>SEND MESSAGE HERE</u></h3>
+                <form class="send-message">
+                    <label for="messagebox">TYPE</label><input type="text" id="message-input">
+                    <input type="submit" value="send" id="submitBtn">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

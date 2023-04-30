@@ -1,0 +1,33 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Admin</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./resources\download.png" alt="WEBSITE LOGO">
+        <nav>
+            <ul class="nav_bar">
+                <li><u><a href="./index.html">HOME</a></u></li>
+                <li><u><a href="/student.html">STUDENT</a></u></li>
+                <li><u><a href="/teacher.html">TEACHER</a></u></li>
+                <li><u><a href="/admin.html" id="adminlink">ADMIN</a></u></li>
+            </ul>
+    </header>
+    <div class="admin-body">
+        <div>
+            <h1 id="form-head"><u> ADD TEACHER </u></h1>
+            <form class="add-teacher">
+                <label for="Name">FULL NAME</label><input type="text" id="name">
+                <label for="Department">FACULTY</label><input type="text" id="faculty">
+                <label for="Subject">SUBJECT</label><input type="text" autocomplete="off" id="subject">
+                <label for="e-mail">E-MAIL</label><input type="email" autocomplete="off" id="email" >
+                <input type="submit" value="Submit" id="submitBtn">
+            </form>
+        </div>
+        <div id="update-teacher" ><button> <b> UPDATE / DELETE </b></button></div>
+        <div id="approve" ><button><b> APPROVE STUDENT </b></button></div>     
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

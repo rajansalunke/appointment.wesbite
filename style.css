@@ -1,0 +1,372 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: gray;
+}
+/* index */
+.index-body {
+    background-image: url(./resources/index\ background.png);
+    background-size:40%;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-position-y:15rem;
+}
+.index-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.index-text{
+    font-family: "Times New Roman";
+    padding-top: 40px;
+    padding-left: 300px;
+    font-size: 30px;
+    color:rgb(39, 29, 29);
+}
+/* header */
+li, a {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    text-decoration: none;
+}
+header {
+    display: flex;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: black;
+    height: 80px;
+}
+.logo {
+    height: 50px;
+    margin-left: 250px;
+}
+.nav_bar {
+    list-style: none;
+}
+.nav_bar li {
+    display: inline-block;
+    padding: 0px 30px;
+}
+.nav_bar li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_bar li a:hover {
+    color: blue;
+}
+.nav_bar a:is(:link, :active, :visited).active {
+    color:gray;
+}
+/* student-page */
+.student-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.sturight-body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: rgb(29, 28, 28);
+    margin-top: 20px;
+    padding-left: 175px;
+}
+#studentreg {
+    border: solid white;
+    border-radius: 10px;
+    background: black;
+    padding: 1rem;
+    color: white;
+    margin: 1rem 0;
+    margin-left: 90%;
+    height: auto;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s background ease;
+}
+#studentreg:hover {
+    background-color: blue;
+}
+.student-reg {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    color: rgb(27, 27, 27);
+    max-width: 500px;
+    height: 600px;
+    margin: 0.5rem auto;
+    padding: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.student-reg label {
+    display: block; 
+    padding: 20px;
+}
+.student-reg input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    border-radius: 5px;
+}
+.bookappo-form {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    max-width: 500px;
+    margin: 0.5rem auto;
+    padding: 1rem;
+}
+.bookappo-form label {
+    display: block; 
+    padding: 1px;
+}
+.bookappo-form input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    border-radius: 5px;
+}
+.send-message {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    max-width: 500px;
+    width: 500px;
+    height: 170px;
+    margin: 0.5rem auto;
+    padding: 1rem;
+}
+.send-message label {
+    display: block; 
+    padding: 1px;
+}
+.send-message input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    border-radius: 5px;
+}
+#stu-form-head {  
+    margin: 0.5rem 450px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-size: x-large;
+}
+#registerBtn {
+    border: 0;
+    background:black;
+    padding: 1rem;
+    color: white;
+    margin: 10rem 0;
+    width : 100%;
+    height: auto;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s background ease;
+}
+#registerBtn:hover {
+    background-color: blue;
+}
+  /* teacher body */
+.teacher-body {
+    display: flex;
+    flex-direction: row;
+}
+.left-body , .right-body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    align-items: center;
+}
+.schedule-form {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    color: rgb(24, 23, 23);
+    max-width: 400px;
+    height: 45vh;
+    margin: 0.5rem auto;
+    padding: 2rem;
+    border-radius: 5px;
+}
+.schedule-form label {
+    display: block; 
+    padding: 1px;
+}
+.schedule-form input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    border-radius: 5px;
+}
+
+.manage-appo {
+    color:black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    max-width: 500px;
+    width: 500px;
+    height: 160px;
+    margin: 0.5rem auto;
+    padding: 2rem;
+}
+.view-message {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    max-width: 500px;
+    height: 160px;
+    width: 500px;
+    margin: 0.5rem auto;
+    padding: 2rem;
+}
+.view-appo {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    max-width: 500px;
+    width: 500px;
+    height: 160px;
+    margin: 0.5rem auto;
+    padding: 2rem;
+}
+#logoutBtn {
+    border: solid white;
+    border-radius: 10px;
+    background: black;
+    padding: 1rem;
+    color: white;
+    margin: 1rem 0;
+    margin-left: 25%;
+    height: auto;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s background ease;
+}
+#logoutBtn:hover {
+    background-color: blue;
+}
+/* admin page */
+.admin-body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: rgb(11, 11, 11);
+    margin: 20px;
+    align-items: center;
+}
+#form-head {
+    color: rgb(24, 23, 23);
+    margin: 0.5rem 300px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-size: x-large;
+}
+input {
+    background-color: white;
+}
+input[type="text"] {
+    color: black;
+    }
+.add-teacher {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    max-width: 500px;
+    margin: 0.5rem auto;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.add-teacher label {
+    display: block; 
+    padding: 1px;
+}
+.add-teacher input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    border-radius: 5px; 
+}
+#submitBtn {
+    border: white;
+    background: black;
+    padding: 1rem;
+    color: white;
+    margin: 1rem 0;
+    width : 50%;
+    height: auto;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s background ease;
+}
+#submitBtn:hover {
+    background-color: blue;
+}
+#update-teacher {
+    margin: 20px;
+    display: block;
+    width: auto;
+    height: auto;
+}
+#update-teacher button {
+    border: solid white;
+    background: black;
+    color: white;
+    height: 50px;
+    width: 300px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    transition: 0.3s background ease;
+}
+#update-teacher button:hover {
+    background-color:blue;
+}
+#approve {
+    margin: 20px;
+    display: block;
+    width: auto;
+    height: auto;
+}
+#approve button {
+    border: solid white;
+    background: black;
+    color: white;
+    height: 50px;
+    width: 300px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    transition: 0.3s background ease;
+}
+#approve button:hover {
+    background-color: blue;
+}
+/* admin login */
+#login-form {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    max-width: 500px;
+    margin: 0.5rem auto;
+    padding: 3rem;
+}
+#login-form  label {
+    display: block; 
+    padding: 1px;
+}
+#login-form  input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    border-radius: 5px;
+   
+}
